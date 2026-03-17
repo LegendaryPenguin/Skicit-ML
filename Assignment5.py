@@ -2,61 +2,27 @@
 """
 Program Name: EECS 658 Assignment 5
 Description:
-    This program loads the imbalanced iris dataset from "imbalanced iris.csv"
-    and evaluates a Neural Network classifier with 2-fold cross-validation for:
-    1) The original imbalanced dataset
-    2) Oversampling methods (RandomOverSampler, SMOTE, ADASYN)
-    3) Undersampling methods (RandomUnderSampler, ClusterCentroids, TomekLinks)
+This program loads the imbalanced iris dataset from imbalanced iris.csv
+and evaluates a Neural Network classifier with 2-fold cross-validation for
+Part 1) The original imbalanced dataset
+Part 2) Oversampling methods (RandomOverSampler, SMOTE, ADASYN)
+Part 3) Undersampling methods (RandomUnderSampler, ClusterCentroids, TomekLinks)
 
-    For Part 1, the program prints:
-        - Confusion Matrix
-        - Accuracy
-        - Class Balanced Accuracy
-        - Balanced Accuracy
-        - scikit-learn balanced_accuracy_score
+For Part 1, the program prints the Confusion Matrix, Accuracy, Class Balanced Accuracy, Balanced Accuracy, and scikit-learn balanced_accuracy_score
+For Parts 2 and 3, the program prints the Confusion Matrix and Accuracy
 
-    For Parts 2 and 3, the program prints:
-        - Confusion Matrix
-        - Accuracy
+Inputs: imbalanced iris.csv
+Outputs: Printed statements for all three parts
+Date: 03/16/2026
 
-Inputs:
-    - imbalanced iris.csv (must be in the same folder as this Python file, or the
-      DATA_FILE path can be updated below)
-
-Outputs:
-    - Printed results for all three assignment parts
-    - Confusion matrices and requested scores
-
-Model:
-    - Neural Network classifier implemented with scikit-learn's MLPClassifier
-    - 2-fold Stratified Cross-Validation
-
-Collaborators:
-    - None
-
-Other Sources for Code / Ideas:
-    - Course materials / lecture instructions
-    - scikit-learn documentation
-    - imbalanced-learn documentation
-    - ChatGPT
-
-Author:
-    - Surender
-
-Creation Date:
-    - 2026-03-16
+AI Assistant: I used ChatGpt to help me format what the terminal output would look like so
+that the code displays in a clean and understandable way.
 """
 
-# Import os so we can build a reliable path to the CSV file.
+# Imports statements
 import os
-
-# Import warnings so we can hide convergence warnings from the neural network if they appear.
 import warnings
-
-# Import numpy for numerical work.
 import numpy as np
-
-# Import pandas to read the CSV file.
 import pandas as pd
 
 # Import the ConvergenceWarning class so it can be filtered out cleanly.
@@ -92,8 +58,6 @@ from imblearn.over_sampling import RandomOverSampler, SMOTE, ADASYN
 # Import the undersampling tools requested in Part 3.
 from imblearn.under_sampling import RandomUnderSampler, ClusterCentroids, TomekLinks
 
-
-# Ignore neural-network convergence warnings so the output stays clean for the assignment printout.
 warnings.filterwarnings("ignore", category=ConvergenceWarning)
 
 
