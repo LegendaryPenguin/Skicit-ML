@@ -1,0 +1,83 @@
+PS C:\Users\nisch\Desktop\EECS658\NischayRawal_Assignment5> python .\Assignment5.py
+
+======================================================================
+Part 1: Imbalanced Data Set
+======================================================================
+Confusion Matrix:
+Class Order: ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
+[[39  1  0]
+ [ 0 25  5]
+ [ 0  2 48]]
+Accuracy: 0.933333
+Class Balanced Accuracy: 0.904665
+Balanced Accuracy: 0.943929
+balanced_accuracy_score (scikit-learn): 0.922778
+
+======================================================================
+Part 2: Oversampling
+======================================================================
+
+======================================================================
+Random Oversampling
+======================================================================
+Confusion Matrix:
+Class Order: ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
+[[39  1  0]
+ [ 0 26  4]
+ [ 0  3 47]]
+Accuracy: 0.933333
+
+======================================================================
+SMOTE Oversampling
+======================================================================
+Confusion Matrix:
+Class Order: ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
+[[39  1  0]
+ [ 0 25  5]
+ [ 0  4 46]]
+Accuracy: 0.916667
+
+======================================================================
+ADASYN Oversampling
+======================================================================
+Confusion Matrix:
+Class Order: ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
+[[39  1  0]
+ [ 0 26  4]
+ [ 0  2 48]]
+Accuracy: 0.941667
+
+======================================================================
+Part 3: Undersampling
+======================================================================
+
+======================================================================
+Random Undersampling
+======================================================================
+Confusion Matrix:
+Class Order: ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
+[[39  1  0]
+ [ 0 26  4]
+ [ 0  4 46]]
+Accuracy: 0.925000
+
+======================================================================
+Cluster Centroids Undersampling
+======================================================================
+Confusion Matrix:
+Class Order: ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
+[[39  1  0]
+ [ 0 26  4]
+ [ 0  3 47]]
+Accuracy: 0.933333
+
+======================================================================
+Tomek Links Undersampling
+======================================================================
+Confusion Matrix:
+Class Order: ['Iris-setosa', 'Iris-versicolor', 'Iris-virginica']
+[[39  1  0]
+ [ 0 25  5]
+ [ 0  2 48]]
+Accuracy: 0.933333
+PS C:\Users\nisch\Desktop\EECS658\NischayRawal_Assignment5>
