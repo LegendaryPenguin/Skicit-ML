@@ -16,7 +16,7 @@ Outputs: Printed statements for all three parts
 Date: 03/16/2026
 
 AI Assistant: I used ChatGpt to help me format what the terminal output would look like so
-that the code displays in a clean and understandable way.
+that the code displays in a clean and understandable way and I also used it to help write detailed comments.
 """
 
 # Imports statements
@@ -277,8 +277,7 @@ y = df["class"]
 labels = sorted(y.unique())
 
 
-# ----------------------------- Part 1 ---------------------------------
-# Print the part number exactly as requested in the assignment.
+# Print the part number
 print_section_title("Part 1: Imbalanced Data Set")
 
 # Build a pipeline for scaling followed by the neural network.
@@ -315,8 +314,7 @@ print(f"Balanced Accuracy: {balanced_acc1:.6f}")
 print(f"balanced_accuracy_score (scikit-learn): {sklearn_bal_acc1:.6f}")
 
 
-# ----------------------------- Part 2 ---------------------------------
-# Print the part number exactly as requested in the assignment.
+# Print the part number
 print_section_title("Part 2: Oversampling")
 
 # Create a dictionary of the oversampling methods requested in the assignment.
@@ -348,8 +346,7 @@ for method_name, sampler in oversamplers.items():
     print(f"Accuracy: {acc:.6f}")
 
 
-# ----------------------------- Part 3 ---------------------------------
-# Print the part number exactly as requested in the assignment.
+# Print the part number
 print_section_title("Part 3: Undersampling")
 
 # Create a dictionary of the undersampling methods requested in the assignment.
